@@ -1,0 +1,46 @@
+slide_id,process_patches,status_patches,seg_level,sthresh,mthresh,close,use_otsu,keep_ids,exclude_ids,a_t,a_h,max_n_holes,vis_level,line_thickness,use_padding,contour_fn,level0_mag,mag_level,patch_level,patch_size,step_size,custom_downsample,save_patch,process_features,status_features,process_hovernet,status_hovernet,bag_size
+N18-0236 2..svs,0,processed,3,8,7,4,False,none,none,1.0,1.0,8,3,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,1895.0
+N18-0771 2..svs,0,processed,3,8,7,4,False,none,none,1.0,1.0,8,3,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,4798.0
+N18-0827 4..svs,0,processed,2,8,7,4,False,none,none,1.0,1.0,8,2,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,2443.0
+N18-0979 2..svs,0,processed,3,8,7,4,False,none,none,1.0,1.0,8,3,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,5102.0
+N18-1142 4..svs,0,processed,3,8,7,4,False,none,none,1.0,1.0,8,3,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,4181.0
+N18-1215 5..svs,0,processed,3,8,7,4,False,none,none,1.0,1.0,8,3,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,7166.0
+N18-1255 3..svs,0,processed,2,8,7,4,False,none,none,1.0,1.0,8,2,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,3336.0
+N18-1282 3..svs,0,processed,2,8,7,4,False,none,none,1.0,1.0,8,2,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,4631.0
+N18-1547 3..svs,0,processed,3,8,7,4,False,none,none,1.0,1.0,8,3,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,2890.0
+N18-1583 2..svs,0,processed,3,8,7,4,False,none,none,1.0,1.0,8,3,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,6019.0
+N18-1855 2..svs,0,processed,3,8,7,4,False,none,none,1.0,1.0,8,3,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,3862.0
+N19-0273 3..svs,0,processed,3,8,7,4,False,none,none,1.0,1.0,8,3,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,8050.0
+N19-0351 3..svs,0,processed,2,8,7,4,False,none,none,1.0,1.0,8,2,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,2207.0
+N19-0454 2..svs,0,processed,2,8,7,4,False,none,none,1.0,1.0,8,2,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,2383.0
+N19-0826 2..svs,0,processed,2,8,7,4,False,none,none,1.0,1.0,8,2,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,1304.0
+N19-1052 6..svs,0,processed,2,8,7,4,False,none,none,1.0,1.0,8,2,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,2282.0
+N19-1272 2..svs,0,processed,2,8,7,4,False,none,none,1.0,1.0,8,2,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,8817.0
+N19-1373 4..svs,0,processed,3,8,7,4,False,none,none,1.0,1.0,8,3,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,7584.0
+N19-1377 2..svs,0,processed,3,8,7,4,False,none,none,1.0,1.0,8,3,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,5880.0
+N19-1620 4..svs,0,processed,3,8,7,4,False,none,none,1.0,1.0,8,3,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,12792.0
+N19-1771 5..svs,0,processed,3,8,7,4,False,none,none,1.0,1.0,8,3,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,6147.0
+N19-1799 5..svs,0,processed,3,8,7,4,False,none,none,1.0,1.0,8,3,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,16816.0
+N19-1825 4..svs,0,processed,2,8,7,4,False,none,none,1.0,1.0,8,2,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,1571.0
+N19-1900 3..svs,0,processed,2,8,7,4,False,none,none,1.0,1.0,8,2,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,5943.0
+N20-0081 8..svs,0,processed,3,8,7,4,False,none,none,1.0,1.0,8,3,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,15033.0
+N20-0303 2..svs,0,processed,3,8,7,4,False,none,none,1.0,1.0,8,3,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,5005.0
+"N20-0428 4, 6.svs",0,processed,2,8,7,4,False,none,none,1.0,1.0,8,2,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,1208.0
+N20-0500 4..svs,0,processed,2,8,7,4,False,none,none,1.0,1.0,8,2,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,2182.0
+"N20-0663 2, 3, 4.svs",0,processed,3,8,7,4,False,none,none,1.0,1.0,8,3,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,3502.0
+N20-0672 2..svs,0,processed,3,8,7,4,False,none,none,1.0,1.0,8,3,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,3700.0
+N20-0735 3..svs,0,processed,2,8,7,4,False,none,none,1.0,1.0,8,2,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,3833.0
+N20-0892 2..svs,0,processed,3,8,7,4,False,none,none,1.0,1.0,8,3,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,2988.0
+N20-1051 6..svs,0,processed,3,8,7,4,False,none,none,1.0,1.0,8,3,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,8180.0
+N20-1063 4..svs,0,processed,2,8,7,4,False,none,none,1.0,1.0,8,2,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,805.0
+N20-1180 4..svs,0,processed,2,8,7,4,False,none,none,1.0,1.0,8,2,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,9455.0
+N20-1197 3..svs,0,processed,2,8,7,4,False,none,none,1.0,1.0,8,2,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,5176.0
+N20-1228 5..svs,0,processed,2,8,7,4,False,none,none,1.0,1.0,8,2,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,3318.0
+N20-1242 2..svs,0,processed,3,8,7,4,False,none,none,1.0,1.0,8,3,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,5291.0
+N20-1256 1..svs,0,processed,3,8,7,4,False,none,none,1.0,1.0,8,3,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,6515.0
+N20-1329 6..svs,0,processed,3,8,7,4,False,none,none,1.0,1.0,8,3,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,6619.0
+N20-1655 3..svs,0,processed,3,8,7,4,False,none,none,1.0,1.0,8,3,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,4640.0
+N20-1695 4.svs,0,processed,2,8,7,4,False,none,none,1.0,1.0,8,2,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,2002.0
+N20-1856 3..svs,0,processed,2,8,7,4,False,none,none,1.0,1.0,8,2,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,1899.0
+"N20-1865 3, 4, 5.svs",0,processed,3,8,7,4,False,none,none,1.0,1.0,8,3,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,3172.0
+N20-1878 2..svs,0,processed,2,8,7,4,False,none,none,1.0,1.0,8,2,100,True,four_pt,20,20,0,256,256,1,True,0,processed,1,tbp,4492.0

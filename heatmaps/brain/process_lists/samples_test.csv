@@ -1,0 +1,46 @@
+subject_id,slide_id,FLAIR,T2,T1,T1Gd
+sfb01,N18-0827 4..svs,brats_sfb01_fla.nii.gz,brats_sfb01_t2.nii.gz,brats_sfb01_t1.nii.gz,brats_sfb01_t1c.nii.gz
+sfb02,N18-0979 2..svs,brats_sfb02_fla.nii.gz,brats_sfb02_t2.nii.gz,brats_sfb02_t1.nii.gz,brats_sfb02_t1c.nii.gz
+sfb03,N18-0771 2..svs,brats_sfb03_fla.nii.gz,brats_sfb03_t2.nii.gz,brats_sfb03_t1.nii.gz,brats_sfb03_t1c.nii.gz
+sfb04,N18-1547 3..svs,brats_sfb04_fla.nii.gz,brats_sfb04_t2.nii.gz,brats_sfb04_t1.nii.gz,brats_sfb04_t1c.nii.gz
+sfb05,N18-1255 3..svs,brats_sfb05_fla.nii.gz,brats_sfb05_t2.nii.gz,brats_sfb05_t1.nii.gz,brats_sfb05_t1c.nii.gz
+sfb06,N18-1142 4..svs,brats_sfb06_fla.nii.gz,brats_sfb06_t2.nii.gz,brats_sfb06_t1.nii.gz,brats_sfb06_t1c.nii.gz
+sfb07,N18-0236 2..svs,brats_sfb07_fla.nii.gz,brats_sfb07_t2.nii.gz,brats_sfb07_t1.nii.gz,brats_sfb07_t1c.nii.gz
+sfb08,N18-1583 2..svs,brats_sfb08_fla.nii.gz,brats_sfb08_t2.nii.gz,brats_sfb08_t1.nii.gz,brats_sfb08_t1c.nii.gz
+sfb09,N19-0454 2..svs,brats_sfb09_fla.nii.gz,brats_sfb09_t2.nii.gz,brats_sfb09_t1.nii.gz,brats_sfb09_t1c.nii.gz
+sfb10,N19-0273 3..svs,brats_sfb10_fla.nii.gz,brats_sfb10_t2.nii.gz,brats_sfb10_t1.nii.gz,brats_sfb10_t1c.nii.gz
+sfb11,N18-1215 5..svs,brats_sfb11_fla.nii.gz,brats_sfb11_t2.nii.gz,brats_sfb11_t1.nii.gz,brats_sfb11_t1c.nii.gz
+sfb12,N18-1855 2..svs,brats_sfb12_fla.nii.gz,brats_sfb12_t2.nii.gz,brats_sfb12_t1.nii.gz,brats_sfb12_t1c.nii.gz
+sfb14,N19-0351 3..svs,brats_sfb14_fla.nii.gz,brats_sfb14_t2.nii.gz,brats_sfb14_t1.nii.gz,brats_sfb14_t1c.nii.gz
+sfb15,N19-0826 2..svs,brats_sfb15_fla.nii.gz,brats_sfb15_t2.nii.gz,brats_sfb15_t1.nii.gz,brats_sfb15_t1c.nii.gz
+sfb16,N19-1052 6..svs,brats_sfb16_fla.nii.gz,brats_sfb16_t2.nii.gz,brats_sfb16_t1.nii.gz,brats_sfb16_t1c.nii.gz
+sfb18,N19-1373 4..svs,brats_sfb18_fla.nii.gz,brats_sfb18_t2.nii.gz,brats_sfb18_t1.nii.gz,brats_sfb18_t1c.nii.gz
+sfb19,N19-1377 2..svs,brats_sfb19_fla.nii.gz,brats_sfb19_t2.nii.gz,brats_sfb19_t1.nii.gz,brats_sfb19_t1c.nii.gz
+sfb20,N19-1771 5..svs,brats_sfb20_fla.nii.gz,brats_sfb20_t2.nii.gz,brats_sfb20_t1.nii.gz,brats_sfb20_t1c.nii.gz
+sfb21,N19-1272 2..svs,brats_sfb21_fla.nii.gz,brats_sfb21_t2.nii.gz,brats_sfb21_t1.nii.gz,brats_sfb21_t1c.nii.gz
+sfb22,N19-1620 4..svs,brats_sfb22_fla.nii.gz,brats_sfb22_t2.nii.gz,brats_sfb22_t1.nii.gz,brats_sfb22_t1c.nii.gz
+sfb23,N19-1825 4..svs,brats_sfb23_fla.nii.gz,brats_sfb23_t2.nii.gz,brats_sfb23_t1.nii.gz,brats_sfb23_t1c.nii.gz
+sfb24,N19-1900 3..svs,brats_sfb24_fla.nii.gz,brats_sfb24_t2.nii.gz,brats_sfb24_t1.nii.gz,brats_sfb24_t1c.nii.gz
+sfb25,N19-1799 5..svs,brats_sfb25_fla.nii.gz,brats_sfb25_t2.nii.gz,brats_sfb25_t1.nii.gz,brats_sfb25_t1c.nii.gz
+sfb26,N20-0303 2..svs,brats_sfb26_fla.nii.gz,brats_sfb26_t2.nii.gz,brats_sfb26_t1.nii.gz,brats_sfb26_t1c.nii.gz
+sfb27,N20-0081 8..svs,brats_sfb27_fla.nii.gz,brats_sfb27_t2.nii.gz,brats_sfb27_t1.nii.gz,brats_sfb27_t1c.nii.gz
+sfb28,"N20-0428 4, 6.svs",brats_sfb28_fla.nii.gz,brats_sfb28_t2.nii.gz,brats_sfb28_t1.nii.gz,brats_sfb28_t1c.nii.gz
+sfb30,"N20-0663 2, 3, 4.svs",brats_sfb30_fla.nii.gz,brats_sfb30_t2.nii.gz,brats_sfb30_t1.nii.gz,brats_sfb30_t1c.nii.gz
+sfb31,N20-0672 2..svs,brats_sfb31_fla.nii.gz,brats_sfb31_t2.nii.gz,brats_sfb31_t1.nii.gz,brats_sfb31_t1c.nii.gz
+sfb32,N20-0735 3..svs,brats_sfb32_fla.nii.gz,brats_sfb32_t2.nii.gz,brats_sfb32_t1.nii.gz,brats_sfb32_t1c.nii.gz
+sfb33,N20-0892 2..svs,brats_sfb33_fla.nii.gz,brats_sfb33_t2.nii.gz,brats_sfb33_t1.nii.gz,brats_sfb33_t1c.nii.gz
+sfb34,N20-1051 6..svs,brats_sfb34_fla.nii.gz,brats_sfb34_t2.nii.gz,brats_sfb34_t1.nii.gz,brats_sfb34_t1c.nii.gz
+sfb35,N20-0500 4..svs,brats_sfb35_fla.nii.gz,brats_sfb35_t2.nii.gz,brats_sfb35_t1.nii.gz,brats_sfb35_t1c.nii.gz
+sfb36,N20-1063 4..svs,brats_sfb36_fla.nii.gz,brats_sfb36_t2.nii.gz,brats_sfb36_t1.nii.gz,brats_sfb36_t1c.nii.gz
+sfb38,N20-1242 2..svs,brats_sfb38_fla.nii.gz,brats_sfb38_t2.nii.gz,brats_sfb38_t1.nii.gz,brats_sfb38_t1c.nii.gz
+sfb39,N20-1197 3..svs,brats_sfb39_fla.nii.gz,brats_sfb39_t2.nii.gz,brats_sfb39_t1.nii.gz,brats_sfb39_t1c.nii.gz
+sfb40,N20-1180 4..svs,brats_sfb40_fla.nii.gz,brats_sfb40_t2.nii.gz,brats_sfb40_t1.nii.gz,brats_sfb40_t1c.nii.gz
+sfb41,N20-1228 5..svs,brats_sfb41_fla.nii.gz,brats_sfb41_t2.nii.gz,brats_sfb41_t1.nii.gz,brats_sfb41_t1c.nii.gz
+sfb42,N20-1256 1..svs,brats_sfb42_fla.nii.gz,brats_sfb42_t2.nii.gz,brats_sfb42_t1.nii.gz,brats_sfb42_t1c.nii.gz
+sfb43,N20-1655 3..svs,brats_sfb43_fla.nii.gz,brats_sfb43_t2.nii.gz,brats_sfb43_t1.nii.gz,brats_sfb43_t1c.nii.gz
+sfb44,N20-1695 4.svs,brats_sfb44_fla.nii.gz,brats_sfb44_t2.nii.gz,brats_sfb44_t1.nii.gz,brats_sfb44_t1c.nii.gz
+sfb45,N20-1329 6..svs,brats_sfb45_fla.nii.gz,brats_sfb45_t2.nii.gz,brats_sfb45_t1.nii.gz,brats_sfb45_t1c.nii.gz
+sfb46,N20-1856 3..svs,brats_sfb46_fla.nii.gz,brats_sfb46_t2.nii.gz,brats_sfb46_t1.nii.gz,brats_sfb46_t1c.nii.gz
+sfb47,"N20-1865 3, 4, 5.svs",brats_sfb47_fla.nii.gz,brats_sfb47_t2.nii.gz,brats_sfb47_t1.nii.gz,brats_sfb47_t1c.nii.gz
+sfb48,N18-1282 3..svs,brats_sfb48_fla.nii.gz,brats_sfb48_t2.nii.gz,brats_sfb48_t1.nii.gz,brats_sfb48_t1c.nii.gz
+sfb50,N20-1878 2..svs,brats_sfb50_fla.nii.gz,brats_sfb50_t2.nii.gz,brats_sfb50_t1.nii.gz,brats_sfb50_t1c.nii.gz
