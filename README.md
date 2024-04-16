@@ -1,7 +1,20 @@
 # AI-based multimodal integration of radiology, pathology and genomics for outcome prediction
 
-### Prerequisite
-<br/><br>
+### Installation
+---
+1. Clone the repo:
+```bash
+git clone https://github.com/luotingzhuang/multimodalfusion.git
+```
+3. Create a conda environment:
+```bash
+conda env create -f env.yml
+```
+3. Activate the environment:
+```bash
+conda activate multimodalfusion
+```
+
 ### Data Preparation
 ---
 #### Public Dataset
@@ -25,7 +38,8 @@ This csv file will be used in feature extractions, training, evaluation, and int
 ### Preprocessing
 ---
 #### Histology 
-The first step is to segment and patch WSIs.
+
+The first step is to segment and patch WSIs. The preprocessing of WSI follows the pipeline of [CLAM](https://github.com/mahmoodlab/CLAM/tree/master). Please follow the installation guide to get access to the segmentation and patching code.
 ```bash
 python create_patches_fp.py --source DATA_DIRECTORY --save_dir RESULTS_DIRECTORY --patch_size 256 --seg --patch --stitch 
 ```
@@ -47,10 +61,11 @@ CUDA_VISIBLE_DEVICES=0,1 python extract_features_fp.py --data_h5_dir DIR_TO_COOR
 CUDA_VISIBLE_DEVICES=0 python feature_extraction.py --radio_dir <RADIO_DATA_DIR> --csv_path <PATH_TO_CSV_FILE> \
   --output_dir <PATH_TO_FEATURES_DIR>  
 ```
-
 <br/><br>
-### Pretraining models
+### Pretraining models 
 ---
+Some example command lines: [commands/commands.sh](https://github.com/luotingzhuang/multimodalfusion/blob/main/commands/commands.sh)
+
 Following data preprocessing, we pre-trained unimodal models on three modalities respectively to address the issue of data scarcity. 
 ```bash
 #Pretrain Radio AMIL
@@ -72,15 +87,18 @@ If the splits have been created, `--which_splits` needs to be a folder name unde
 The cancer type should be specified in `--cancer_type`: glioma or lung. It should match the name of the subfolder in the folders where you store data, features, splits, and results. In radiology models, users need to specify the name each radiology modality with `--modality`. This should match the name of the folder where features and original files were stored. 
 
 There are some key hyperparameters:
-* `--gate_radio` and `--gate_path` (bool): whether to use gated attention modules.
-* `--max_epochs` (int):the number of epochs for training.
-* `--early_stopping` (bool): save the model with the lowest validation loss and therefore prevent overfitting
-* `--drop_out` (bool): whether to use drop out in AMIL
-* `--bag_loss` (str): what loss function to be used. Note: Histology AMIL and Radiology AMIL can only use nll or ranking-nll loss functions.
-* `--batch_size` (int): the number of samples in each batch. The batch_size should be 1 in Histology AMIL and Radiology AMIL.
-* `--seed` (int): set seed for reproducibility.
-* `--reg_type` (str): L1 regularization
-* `--alpha_surv` (float): the hyperparameter for nll or ranking-nll loss to indicate the weights assigned to uncensored patients.
+* `--gate_radio` and `--gate_path` (bool): whether to use gated attention modules. (Default: False)
+* `--max_epochs` (int):the number of epochs for training. (Default: 20)
+* `--early_stopping` (bool): save the model with the lowest validation loss and therefore prevent overfitting (Default: False)
+* `--drop_out` (bool): whether to use drop out in AMIL. (Default: False)
+* `--bag_loss` (str): what loss function to be used. Note: Histology AMIL and Radiology AMIL can only use nll loss functions. (Default: 'nll_surv')
+* `--batch_size` (int): the number of samples in each batch. The batch_size should be 1 in Histology AMIL and Radiology AMIL. (Default: 1)
+* `--seed` (int): set seed for reproducibility. (Default: 1)
+* `--reg_type` (str): L1 regularization. (Default: 'all')
+* `--alpha_surv` (float): the hyperparameter for nll or ranking-nll loss to indicate the weights assigned to uncensored patients. (Default: 0.0)
+* `--lr` (float): learning rate. (Default: 2e-4)
+* `--lambda_reg` (float): weight decay. (Default: 1e-4)
+
 
 The model will save model checkpoints for each cross validation in .pt files. The predicted risks of the validation set will be saved in pickle files. `summary.csv` will store all validation c-index for each cv. All the hyperparamters used will be saved in a .txt file.
 <br/><br>
@@ -95,14 +113,30 @@ Users need to specify the name of output directory with `--output_dir`, the path
 <br/><br>
 ### Multimodal fusion
 ---
-There are three types of multimodal fusion implemented: early concatenation, late concatenation, and kronecker. For early and late concatenation, users can select from feed-forward neural network or highway network. The type of fusion model should be specified with `--train_type`. To change the number of layers in the highway network, users need to add `--n_layers`.
+There are three types of multimodal fusion implemented: early concatenation, late concatenation, and kronecker. The type of fusion model should be specified with `--train_type`. For early and late concatenation, users can select from feed-forward neural network (early-fcnn, late-fcnn) or highway network (early-highway or late-highway). Kronecker fusion can be specified as "kronecker". Unimodal models can also be fine-tuned with fcnn and highway networks (fcnn, highway). To change the number of layers in the highway network, users need to add `--n_layers`.
 
 ```bash
 CUDA_VISIBLE_DEVICES=0 python main_pretrained.py --k <N_FOLD> --which_splits <SPLIT_DIR_NAME> --split_mode train_val \
   --mode path_omic_radio --model_type mm_attention_mil --task <NAME_CSV_FILE> --data_root_dir <PRETRAINED_FEATURE_DIR>
 ```
-The hyperparameters, including `cancer_type`, `bag_loss`, `early_stopping`, `batch_size`, `max_epochs`, `modality`, `n_classes`, `reg_type`, and so on, can also be used to fine-tune the multimodal fusion model.
+
+The hyperparameters, including 
+* `--cancer_type` (str): which cancer type to train brain or lung. (Default: 'brain')
+* `--bag_loss` (str): survival loss functions to use, including ranking_surv, cox_surv, nll_surv, ranking_nll_surv. (Default: 'nll_surv')
+* `--early_stopping` (bool): save the model with the lowest validation loss and therefore prevent overfitting (Default: False)
+* `--batch_size` (int): the number of samples in each batch. The batch_size should be does not have to be 1. (Default: 1)
+* `--max_epochs` (int):the number of epochs for training. (Default: 20)
+* `--modality (str)`: radiology modalities. Brain: FLAIR,T1,T2,T1Gd; Lung: CT. (Default: FLAIR,T1,T2,T1Gd)
+*`--n_classes` (bool): number of time intervals to be divided into. (Default: 4) 
+* `--reg_type` (str): L1 regularization. (Default: 'all')
+* `--lr` (float): learning rate. (Default: 2e-4)
+* `--lambda_reg` (float): weight decay. (Default: 1e-4)
+* `--nll_ratio` (float): ratio of nll for ranking-nll loss. (Default: 0.2)
+
+, and so on, can also be used to fine-tune the multimodal fusion model.
 <br/><br>
+
+
 ### Evaluation
 ---
 To evaluate the pre-trained model on an external dataset, users need to add a test column or replace the validation column with all patients in splits files, and run the following command line:
